@@ -1,0 +1,58 @@
+html,
+body {
+    background-color: rgb(165, 165, 165);
+    color: white;
+    text-align: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "aside1"
+        "content"
+        "aside2"
+        "footer";
+        gap: 10px;
+        padding: 10px;
+}
+
+header {
+    background-color: rgb(122, 24, 86);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.aside1 {
+    background-color: rgb(28, 96, 133);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.column-container {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(97, 167, 89);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.col {
+    background-color: rgb(206, 0, 79);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.aside2 {
+    background-color: rgb(129, 191, 218);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(198, 93, 28);
+    padding: 15px;
+    border-radius: 10px;
+}
