@@ -11,10 +11,19 @@ body {
         "header"
         "aside1"
         "content"
-        "aside2"
+        "aside1"
         "footer";
-        gap: 10px;
-        padding: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.toRow {
+    display: grid;
+    grid-template-areas: 
+        "aside1"
+        "content"
+        "aside1";
+    gap: 10px;
 }
 
 header {
@@ -55,4 +64,25 @@ footer {
     background-color: rgb(198, 93, 28);
     padding: 15px;
     border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+    .toRow {
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        height:15rem;
+    }
+
+    .column-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: end;
+    }
+
+    .aside1,
+    .aside2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
